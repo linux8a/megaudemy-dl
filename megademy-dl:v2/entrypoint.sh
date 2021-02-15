@@ -9,6 +9,7 @@ python /usr/src/udemy-dl/udemy-dl.py \
 $ARGS
 NAME=`ls /data/`
 tar -czvf $NAME$FECHA.tar.gz /data/
-megaput -u ${MAILMEGA} -p ${PASSWORDMEGA} $NAME$FECHA.tar.gz
+megamkdir -u ${MAILMEGA} -p ${PASSWORDMEGA} $NAME
+megaput -u ${MAILMEGA} -p ${PASSWORDMEGA} $NAME/$NAME$FECHA.tar.gz
 rm /data/ -Rv
 rm $NAME$FECHA.tar.gz
