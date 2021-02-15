@@ -34,4 +34,5 @@ cd megaudemy-dl.git
 ./run.sh
 ```
 
-
+![](./images/Screenshot1.png)
+![](./images/Screenshot2.png)
