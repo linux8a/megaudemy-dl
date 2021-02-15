@@ -17,8 +17,12 @@ cd megaudemy-dl.git
 
 3- Crear la imagen desde el script
 
+```
 ./build.sh
+```
 
 4. Ejecutar el script run
 
+```
 ./run.sh
+```
