@@ -1,6 +1,10 @@
 # Microservicio megaudemy-dl
 Para descargar Cursos de Udemy y subirlo a Mega
 
+Aporte de Argenis Ochoa Gonzalez (@linux8a)
+
+
+
 ## Pasos para usarlo
 
 1- Clonar el recurso
@@ -21,8 +25,10 @@ cd megaudemy-dl.git
 ./build.sh
 ```
 
-4. Ejecutar el script run
+4. Ejecutar el script run  le pedira el usuario registrado en udemy (use el correo)
 
 ```
 ./run.sh
 ```
+
+

@@ -26,4 +26,4 @@ printf "Password Mega: "
   printf '\n'
 sleep 2
 
-docker run -it --rm -v ${PWD}/:/data -e USERNAME=$username -e PASSWORD=$password -e URL=$url -e MAILMEGA=$mailmega -e PASSWORDMEGA=$passwordmega megaudemy-dl
+docker run -it --rm -e USERNAME=$username -e PASSWORD=$password -e URL=$url -e MAILMEGA=$mailmega -e PASSWORDMEGA=$passwordmega megaudemy-dl

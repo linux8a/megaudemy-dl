@@ -22,7 +22,7 @@ RUN cd /usr/src/ \
     && cd udemy-dl \
     && pip install -r requirements.txt
 
-RUN mkdir /data
+RUN mkdir /data 
 
 VOLUME /data
 WORKDIR /data

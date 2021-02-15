@@ -4,11 +4,11 @@ python /usr/src/udemy-dl/udemy-dl.py \
             ${URL} \
            -u $USERNAME \
            -p ${PASSWORD} \
-           -o "/data/Curso"
+           -o "/data"
            --info
 $ARGS
-NAME=`ls /data/Curso`
-tar -czvf $NAME$FECHA.tar.gz /data/Curso
+NAME=`ls /data/`
+tar -czvf $NAME$FECHA.tar.gz /data/
 megaput -u ${MAILMEGA} -p ${PASSWORDMEGA} $NAME$FECHA.tar.gz
-rm /data/Curso -Rv
+rm /data/ -Rv
 rm $NAME$FECHA.tar.gz
