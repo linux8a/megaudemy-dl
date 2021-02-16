@@ -37,6 +37,7 @@ cd megaudemy-dl.git
 ./run.sh
 ```
 * Capturas
+
 ![](./images/Screenshot1.png)
 
 ![](./images/Screenshot2.png)
