@@ -10,10 +10,11 @@ ENV USERNAME=
 ENV PASSWORD=
 ENV MAILMEGA=
 ENV PASSWORDMEGA=
+ENV SIZEVOLUME=104857600
 ENV ARGS=
 
 RUN DEBIAN_FRONTEND="noninteractive" apt-get update
-RUN apt-get install -y git curl megatools
+RUN apt-get install -y git curl megatools split
 
 # Download git and install requirement
 

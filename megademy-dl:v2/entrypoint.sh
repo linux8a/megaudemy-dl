@@ -8,8 +8,8 @@ python /usr/src/udemy-dl/udemy-dl.py \
            --info
 $ARGS
 NAME=`ls /data/`
-tar -czvf $NAME$FECHA.tar.gz /data/
+tar -cvj /data |split -b ${SIZEVOLUME} -d - $NAME$FECHA.tbz.
 megamkdir -u ${MAILMEGA} -p ${PASSWORDMEGA} $NAME
-megaput -u ${MAILMEGA} -p ${PASSWORDMEGA} $NAME/$NAME$FECHA.tar.gz
+megaput -u ${MAILMEGA} -p ${PASSWORDMEGA} $NAME/$NAME$FECHA.tbz.*
 rm /data/ -Rv
-rm $NAME$FECHA.tar.gz
+rm $NAME$FECHA.tbz.*
