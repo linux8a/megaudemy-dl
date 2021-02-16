@@ -6,10 +6,10 @@ Aporte de Argenis Ochoa Gonzalez (@linux8a)
 Testeado por レイニエル (@k4rm0nk3y) y sugerencia de dividir el archivo comprimido por volumenes. Para facilitar la descarga en conexiones
 mas lentas.
 
-* ![Version para el que tenga un buen ancho de banda](./megademy-dl:v1)
+* [Version para el que tenga un buen ancho de banda](./megademy-dl:v1)
 
 
-* ![Version para el que tenga ancho de banda bajo](./megademy-dl:v2)
+* [Version para el que tenga ancho de banda bajo](./megademy-dl:v2)
 
 ## Pasos para usarlo
 
