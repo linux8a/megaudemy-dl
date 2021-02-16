@@ -14,7 +14,7 @@ ENV SIZEVOLUME=104857600
 ENV ARGS=
 
 RUN DEBIAN_FRONTEND="noninteractive" apt-get update
-RUN apt-get install -y git curl megatools split
+RUN apt-get install -y git curl megatools 
 
 # Download git and install requirement
 
