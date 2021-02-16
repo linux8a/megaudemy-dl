@@ -26,7 +26,9 @@ printf "Password Mega: "
     stty echo
   printf '\n'
 sleep 1
-echo -n "Tamano en bytes a dividir el archivo comprimido en Mega"
-    read sizevolume
+echo -n "Escriba la cifra en MB para dividirlo y subirlo a Mega.gz"
+    read mb
+    
+let sizevolume=$mb*1000000
 
 docker run -it --rm -e USERNAME=$username -e PASSWORD=$password -e URL=$url -e SIZEVOLUME=$sizevolume -e MAILMEGA=$mailmega -e PASSWORDMEGA=$passwordmega megaudemy-dl:v2
