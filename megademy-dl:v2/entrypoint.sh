@@ -9,7 +9,7 @@ python /usr/src/udemy-dl/udemy-dl.py \
 $ARGS
 NAME=`ls /data/`
 tar -cvj /data |split -b ${SIZEVOLUME} -d - $NAME$FECHA.tbz.
-megamkdir -u ${MAILMEGA} -p ${PASSWORDMEGA} $NAME
-megaput -u ${MAILMEGA} -p ${PASSWORDMEGA} $NAME/$NAME$FECHA.tbz.*
+megamkdir -u ${MAILMEGA} -p ${PASSWORDMEGA} --path=/Root/$NAME
+megaput -u ${MAILMEGA} -p ${PASSWORDMEGA} --path=/Root/$NAME/ $NAME$FECHA.tbz.*
 rm /data/ -Rv
 rm $NAME$FECHA.tbz.*
