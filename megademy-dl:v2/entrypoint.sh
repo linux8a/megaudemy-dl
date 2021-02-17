@@ -7,10 +7,9 @@ python /usr/src/udemy-dl/udemy-dl.py \
            -o "/data"
            --info
 $ARGS
-NAME=`ls /data/`
+NAME=`ls /data`
 rm /data/.udemy-dl.conf
 tar -cvj /data |split -b ${SIZEVOLUME} -d - $NAME$FECHA.tbz.
 megamkdir -u ${MAILMEGA} -p ${PASSWORDMEGA} /Root/$FECHA/
 megaput -u ${MAILMEGA} -p ${PASSWORDMEGA} --path=/Root/$FECHA/ $NAME$FECHA.tbz.*
 rm /data/ -Rv
-rm $NAME$FECHA.tbz.*

@@ -3,6 +3,7 @@
 unset username
 unset password
 unset passwordmega
+m=m
 
 echo -n "Usuario registrado udemy:"
     read username
@@ -29,4 +30,4 @@ sleep 1
 echo -n "Escriba la cifra en MB para dividirlo y subirlo a Mega.gz: "
      read sizevolume    
 
-docker run -it --rm -e USERNAME=$username -e PASSWORD=$password -e URL=$url -e SIZEVOLUME=$sizevolumem -e MAILMEGA=$mailmega -e PASSWORDMEGA=$passwordmega megaudemy-dl:v2
+docker run -it --rm -e USERNAME=$username -e PASSWORD=$password -e URL=$url -e SIZEVOLUME=$sizevolume$m -e MAILMEGA=$mailmega -e PASSWORDMEGA=$passwordmega megaudemy-dl:v2
