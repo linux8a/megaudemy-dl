@@ -13,8 +13,9 @@ ENV PASSWORDMEGA=
 ENV SIZEVOLUME=
 ENV ARGS=
 
-RUN DEBIAN_FRONTEND="noninteractive" apt-get update
-RUN apt-get install -y git curl megatools 
+RUN DEBIAN_FRONTEND="noninteractive" apt-get update -y \
+    && apt-get install -y git curl megatools --no-install-recommends \
+    && rm -rf /var/lib/apt/lists/* 
 
 # Download git and install requirement
 
