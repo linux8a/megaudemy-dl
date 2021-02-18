@@ -7,7 +7,9 @@ python /usr/src/udemy-dl/udemy-dl.py \
            -o "/data"
            --info
 $ARGS
-NAME=`ls /data/`
+NAME=`ls /data`
+rm /data/.udemy-dl.conf
+rm /data/$NAME/udemy-dl.log
 tar -czvf $NAME$FECHA.tar.gz /data/
 megaput -u ${MAILMEGA} -p ${PASSWORDMEGA} $NAME$FECHA.tar.gz
 rm /data/ -Rv
